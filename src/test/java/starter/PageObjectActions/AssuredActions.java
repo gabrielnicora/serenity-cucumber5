@@ -1,11 +1,7 @@
 package starter.PageObjectActions;
 
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
-import io.restassured.response.ResponseBodyData;
 import net.serenitybdd.core.pages.PageObject;
-import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.thucydides.core.annotations.Step;
 
 public class AssuredActions extends PageObject {

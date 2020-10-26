@@ -10,6 +10,7 @@ Feature: GoalSetter Challenge
     And Set sender email by creating a random email address
     And Navigate to purchase Screen
     And Set a cardholder's full name
+    #No pude impleemntar estos pasos, me trabe con un error del site luego del click
     And Set debit card number as: 4242 4242 4242 4242
     And Set expiration date: 04/24
     And Set CVC: 242
@@ -17,5 +18,4 @@ Feature: GoalSetter Challenge
     And Pay for the goalcard
 
   Scenario:backend assertions
-    Given post request to API and validate code 200
-    Then post request to API and validate code 200 and Print Token
+    Given post request to API and validate code 200 and Print Token

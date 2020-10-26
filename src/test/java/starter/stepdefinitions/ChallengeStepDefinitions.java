@@ -2,14 +2,10 @@ package starter.stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
 import net.thucydides.core.annotations.Steps;
 import starter.PageObjectActions.ChallengeActions;
 import starter.PageObjectActions.AssuredActions;
 import starter.navigation.NavigateTo;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.hamcrest.Matchers.equalTo;
-
 
 public class ChallengeStepDefinitions {
 
@@ -60,9 +56,9 @@ public class ChallengeStepDefinitions {
         challengeActions.setCardholderFullName();
     }
 
-    @Given("^post request to API and validate code 200 and Print Token")
+    @Given("post request to API and validate code 200 and Print Token")
     public void valildate_response_code() {
-       System.out.println("TOKEN: " + assuredActions.getResponseCode());
+       System.out.println("TOKEN: *********************************" + assuredActions.getResponseCode());
     }
 
 }

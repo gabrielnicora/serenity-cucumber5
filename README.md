@@ -15,8 +15,12 @@ src
         + windows
           chromedriver.exe          OS-specific Webdriver binaries
           geckodriver.exe
+  + target
+    + site
+      + serenity                    index.html despliega el reporte de serenity-bdd
 
 ```
+
 
 ## The Cucumber 4 sample scenario
 
@@ -68,10 +72,6 @@ To run the sample project, you can either just run the `CucumberTestSuite` test 
 By default, the tests will run using Chrome. You can run them in Firefox by overriding the `driver` system property, e.g.
 ```json
 $ mvn clean verify -Ddriver=firefox
-```
-Or 
-```json
-$ gradle clean test -Pdriver=firefox
 ```
 
 The test results will be recorded in the `target/site/serenity` directory.
