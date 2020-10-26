@@ -4,10 +4,11 @@ import net.thucydides.core.annotations.Step;
 
 public class NavigateTo {
 
-    DuckDuckGoHomePage duckDuckGoHomePage;
+    GoalSetterHomePage goalSetterHomePage;
 
-    @Step("Open the DuckDuckGo home page")
-    public void theDuckDuckGoHomePage() {
-        duckDuckGoHomePage.open();
+    @Step("Open the GoalSetter home page")
+    public void goalSetterHomePage() {
+        goalSetterHomePage.openUrl("https://qa-portal.goalsetter.co/user/kyle3080");
     }
+
 }
